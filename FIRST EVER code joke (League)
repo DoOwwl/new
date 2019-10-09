@@ -1,0 +1,52 @@
+# Chapter 4 review lets do a league joke followed by an interruption aka using end=
+print('Hey what is your name?')
+name = input()
+print('Cool ' + name + '! Want to play some League of Legends?')
+print()
+print('Type Yes for Yes and No for No')
+YnO = input()  # The first Yes or no input
+a = str('Yes')  # These are str values so now a is stored as a word
+b = str('No')  # These values are in word form so a = Yes and b = No
+
+if YnO == a:
+    print('Sounds great lets go!')
+    print()
+    print('Do you want to hear a joke first before we go?')
+    print()
+    print('*Please type Sure for Yes and No for no :D')
+    yNo = input()
+    c = str('Sure')
+    d = str('No')
+    if yNo == d:  # The start of another Yes or no input
+        print('Man you\'re boring')
+
+    if yNo == c:
+        print('Alright man! Name your favorite league character.')
+        name = input()
+        print()
+        print(name + '?')
+        print("Your favorite character is the joke lol")
+
+if YnO == b:
+    print('Aww okay then')
+    print('Are you sure? I have an Alistar (the cow) joke for you :(')
+    print()
+    print('*Say Yes for yes and No for no')
+
+    Yno = input()  # the start of the 3rd Yes or no input
+    e = str('Yes')
+    f = str(
+        'No')  # Yes these are the same responses but also set to different variables which the pc reads from up to down
+    if Yno == f:
+        print('Bruh I\'m tired of convincing you')
+
+    if Yno == e:
+        print('Who is your favorite character in LOL?')
+        name_of_character = input()
+        print(name_of_character + '? That character...',
+              end='')  # Remember to add a , before end= which allows the string to pass onto another argument
+        print('-MOOOOOOOO')
+
+
+
+

@@ -1,0 +1,27 @@
+# JUst to fool people :p
+
+print ('Type two numbers so we can add them and the progam will do a nice little trick')
+ans = input()
+ans = str(ans)
+ans2 = input()
+ans2 = str(ans2)
+
+print ('Is ' + ans + ' + ' + ans2 + ' your equation? (type yes or no please)')
+ans3 = input()
+ans3 = ans3.lower()
+
+if ans3 == 'yes':
+    print (ans + ans2)
+    print ()
+    print ('Isn\'t the trick cool :D')
+
+else:
+    print ('Then what are your two digits?')
+    ans = input()
+    ans2 = input()
+    print (ans + ans2)
+    print()
+    print ('Cool right?')
+
+
+

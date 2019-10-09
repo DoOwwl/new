@@ -1,0 +1,48 @@
+# This is similar to the dragon game just with our own twist to things
+import random
+import time
+
+def intro ():
+    print ('So you\'ll have to choose between 1 or 2 in order to see if you get the treasure or you\'ll have to deal with pirates')
+
+print ()
+
+def TP(): #TP = Teasure Pirate XD
+    choice = ' '
+    while choice != '1' and choice != '2':
+        print ("You will have to type 1 or 2...")
+        choice = input()
+
+    return choice
+
+def checkTP(TP): #Check
+    print ('You are searching...')
+    time.sleep(2)
+    print ('You see a pirate...')
+    time.sleep(2)
+    print ('But you also see the GOLD!')
+    time.sleep(2)
+    print ()
+
+    friendlyTP = random.randint (1, 2) #The treasure
+
+    if TP == str(friendlyTP):
+        print ('YOU HEAR THE CANNON ROAR AND KILLS THE PIRATE! The treasure is indeed yours :^)')
+    else:
+        print ('*Movement from behind* You\'ve been spotted...')
+
+playagain = 'yes'
+
+while playagain == 'yes' or playagain == 'y':
+    intro()
+    number = TP()
+    checkTP(number)
+
+    print ('Do you want to play again? (yes or no)')
+    playagain = input()
+
+
+
+
+
+
